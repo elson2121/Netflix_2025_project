@@ -1,0 +1,63 @@
+.footer_outer_container {
+    background-color: #111;
+    color: gray;
+    display: flex;
+    justify-content: center;
+   
+}
+.footer_inner_container{
+    width: 60%;
+    /* background-color: red; */
+  
+}
+.footer_icons {
+    /* background-color: blue; */
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 55px;
+    color: #fff;
+    margin-top: 10px;
+   
+}
+.footer_data  {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer_data ul {
+ 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 12vh;
+    white-space: nowrap;
+}
+.footer_data{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_data ul li{
+cursor: pointer;
+margin-top: 7px;
+font-size: 12px;
+}
+
+.service {
+   border: 1px solid; 
+    display: inline-flex;
+padding: 2px; 
+   
+  justify-content: center;  
+  
+margin: 10px 0px;
+cursor: pointer;
+}
+.Year_part {
+    font-size: 12px;
+    color: rgb(141, 139, 137);
+}
+.service_code_part{
+    margin-left: 55px;
+}

@@ -1,0 +1,47 @@
+.header_outer_container {
+ position: sticky;
+
+ top: 0px;
+ display: flex; /* This is correct, but let's change its function */
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(15, 15, 15); /* Cleaned up duplicate backgrounds */
+ color: rgb(236, 228, 228);
+ height: 10vh;
+ transition: all 0.5s ease-in; /* Combine transition properties */
+z-index: 1;
+}
+
+.header_container {
+ /* This is the most important fix */
+display: flex; 
+
+/* Pushes the left and right sections to opposite ends */
+ justify-content: space-between; 
+
+ /* Aligns the left and right lists vertically */
+ align-items: center; 
+ width: 90%; /* A good practice to give it some width */
+}
+
+.header_left ul {
+ display: flex;
+ color: white;
+ gap: 40px;
+ justify-content: center;
+ list-style: none;
+ align-items: center;
+}
+.header_left ul img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+.header_right ul {
+ display: flex;
+ gap: 20px;
+ justify-content: flex-end;
+ list-style: none;
+}
