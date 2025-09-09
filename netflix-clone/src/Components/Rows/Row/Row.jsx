@@ -4,7 +4,7 @@ import { axiosfile } from '../../../utils/axiosfile';
  import YouTube from 'react-youtube'
 import './Row.css'
 import { requests } from '../../../utils/requests';
-const Row = ({title, fetchurl, islargerow}) => {
+const Row = ({title,  fetchurl, islargerow}) => {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl]=useState("");
   const base_url = 'https://image.tmdb.org/t/p/original';
@@ -66,26 +66,22 @@ const Row = ({title, fetchurl, islargerow}) => {
   };
 
   return (
-    <div className='row'> 
+  <div className='row' > 
       <h1>{title}</h1>
-      <div className='row_posters'>
+      {/* CHANGE 3: Add this class to make the first row vertical */}
+      <div className={`row_posters ${islargerow && "row_posters_vertical"}`}>
         {movies.map((movie) => (
           <img 
             key={movie.id} 
-            onClick={() => handleClick(movie)} // Add the click handler
-            // Corrected the template literal for the class name
+            onClick={() => handleClick(movie)} 
             className={`row_poster ${islargerow && "row_posterLarge"}`}
-             // Corrected the image source to use the original path
             src={`${base_url}${islargerow ? movie.poster_path : movie.backdrop_path}`} 
             alt={movie.name} 
-            // className = {`row_poster $ {isLargeRow && "row_posterLarge"}`}
           />
-        ))} 
-      </div>
-         {/* Conditionally render the YouTube player if a trailer exists */}
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
-    
+      ))} 
     </div>
+    {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+  </div>
   );
 };
 

@@ -8,3 +8,34 @@
   height: 100vh;
   /* All other styles for the banner */
 }
+/* App.css */
+
+/*
+* These styles apply on all screens.
+* Adjust the height of the entire row here.
+*/
+.row_posters {
+  /* height: 60vh; <<-- ADJUST THIS TO CHANGE THE ROW'S HEIGHT */
+  /* ... other styles */
+}
+
+/*
+* Adjust the size of the individual posters on mobile.
+*/
+.row_poster {
+  max-height: 400px; /* <<-- ADJUST THIS TO CHANGE THE POSTER SIZE ON MOBILE */
+  /* ... other styles */
+}
+
+/*
+* This is inside the @media query for larger screens.
+*/
+@media (min-width: 768px) {
+  /*
+  * Adjust the size of the individual posters on desktop.
+  */
+  .row_posterLarge {
+    max-height: 250px; /* <<-- ADJUST THIS TO CHANGE THE POSTER SIZE ON DESKTOP */
+    /* ... other styles */
+  }
+}
