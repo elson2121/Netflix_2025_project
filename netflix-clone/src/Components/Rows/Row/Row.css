@@ -1,0 +1,44 @@
+/* Styles for the main row container */
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+/* Styles for the container that holds all the movie posters */
+.row_posters {
+  display: flex;
+  overflow-y: hidden; /* Hides the vertical scrollbar */
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  padding: 20px;
+}
+
+/* Hide the scrollbar in a standard way */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for each individual poster */
+.row_poster {
+  width: 100%;
+  max-height: 100px; /* Standard poster height */
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms; /* Adds a smooth hover effect */
+}
+
+/* When the user hovers over a poster, slightly enlarge it */
+.row_poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+/* Styles for the larger poster for the Netflix Originals row */
+.row_posterLarge {
+  max-height: 250px;
+}
+
+/* When the user hovers over a large poster, slightly enlarge it more */
+.row_posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
