@@ -3,7 +3,8 @@
 A front-end web application that replicates the core user interface and features of Netflix 🎥.
 This project was built as part of the Evangadi Winner Program 🏆 to demonstrate skills in modern web development using React, API integration, and responsive design.
 
-👉 Live Demo: [🔗 myproject-onnetlify.netlify.app]( https://github.com/elson2121/Netflix_2025_project/edit/main/netflix-clone)
+👉 Live Demo:🔗 myproject-onnetlify.netlify.app
+( the row code is on => https://github.com/elson2121/Netflix_2025_project/edit/main/netflix-clone)
 
 ✨ Features
 
