@@ -1,12 +1,77 @@
-# React + Vite
+🎬 Netflix Clone (React + TMDB API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end web application that replicates the core user interface and features of Netflix 🎥.
+This project was built as part of the Evangadi Winner Program 🏆 to demonstrate skills in modern web development using React, API integration, and responsive design.
 
-Currently, two official plugins are available:
+👉 Live Demo: [🔗 Click Here](Your GitHub Pages Link)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## Expanding the ESLint configuration
+✔️ Dynamic Content: Fetches and displays trending movies & TV shows from TMDB API.
+✔️ Trailer Playback: Watch official YouTube trailers directly by clicking on posters.
+✔️ Responsive Design: Seamless viewing experience across mobile, tablet, and desktop.
+✔️ Netflix Look & Feel: Clean, sleek UI inspired by the real Netflix platform.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Tech Stack
+
+This project was powered by:
+
+⚛️ React – Component-based UI development
+
+⚡ Vite – Lightning-fast build tool
+
+🌐 Axios – Fetching movie/TV data from TMDB API
+
+🎨 Material-UI (MUI) – Pre-styled components & icons
+
+▶️ react-youtube – Embedded video player
+
+🌍 gh-pages – Deployment to GitHub Pages
+
+⚙️ Getting Started
+
+Follow these steps to run the project locally ⬇️
+
+📌 Prerequisites
+
+Install Node.js
+
+Install npm
+
+🔧 Installation
+
+Clone this repository:
+
+git clone [Your Repository URL]
+
+
+Go to project folder:
+
+cd netflix-clone
+
+
+Install dependencies:
+
+npm install
+
+🔑 API Configuration
+
+This project needs a TMDB API key 🎟️.
+
+Create a free account here 👉 TMDB API
+
+In your project root, create a file named .env
+
+Add your API key:
+
+VITE_TMDB_API_KEY=your_api_key_here
+
+▶️ Running the App
+
+Start the development server with:
+
+npm run dev
+
+
+Your app will be live at: http://localhost:5173/
+ 🌍
